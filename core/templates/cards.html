@@ -1,0 +1,9 @@
+{%for key,card in cards.items%}
+    <div class = "card">
+        <a class = "card__description" href = "../{{key}}">
+            <p class = "card__title">{{card.title}}</p>
+            <p class = "card__text">{{card.description}}</p>
+        </a>
+        <img class = "card__preview" src = {{card.image}} alt = "{{card.img}}"/>
+    </div>
+{%endfor%}

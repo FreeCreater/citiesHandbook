@@ -8,30 +8,14 @@
 <body>
     <div class = "container">
         <div class = "menu">
-            {%for key,card in cards.items%}
-            <div class = "card">
-                <a class = "card__description" href = "../{{key}}">
-                    <p class = "card__title">{{card.title}}</p>
-                    <p class = "card__text">{{card.description}}</p>
-                </a>
-                <img class = "card__preview" src = {{card.img}} alt = "{{card.img}}"/>
-            </div>
-            {%endfor%}
+            {%include './cards.html'%}
         </div>
         <div class = "content">
             <a href={{city.original_link}}>
                 <p class = "content__title">{{city.title}}</p>
             </a>
             <p class = "content__description">{{city.description}}</p>
-            {%for sight in city.sights%}
-                <div class = "sight">
-                    <div class = "sight__description">
-                        <p class = "sight__title">{{sight.title}}</p>
-                        <p class = "sight__text">{{sight.description}}</p>
-                    </div>
-                    <img src = {{sight.img}}/>
-                </div>
-            {%endfor%}
+            {%include './sights.html'%}
         </div>
     </div>
 </body>

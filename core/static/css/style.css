@@ -2,13 +2,20 @@ body{
     background-color: rgb(195, 237, 206);
     overflow: hidden;
 }
+a{
+    text-decoration: none;
+    color: black;
+}
+img{
+    border-radius: 5px;
+}
 .container{
     display:flex;
     width: 100%;
 }
 .menu{
     width: 35%;
-    overflow: hidden;
+    overflow    : hidden;
 }
 .content{
     width: 65%;
@@ -22,7 +29,8 @@ body{
     left: 0;
     top: 0;
     width: 100%;
-    padding: 5px;
+    margin: 5px 0;
+    padding: 0 5px;
     background-color: rgb(195, 237, 206);
     border-radius: 5px;
 }
@@ -37,13 +45,15 @@ body{
     color: black
 }
 
-.card__title{
+.card__title, .content__title, .sight__title{
+    font-size: 20px;
     text-align: center;
 }
 
 .card__preview{
     width: 50%;
     border-radius: 5px;
+    margin: 5px;
 }
 
 .content__title{
@@ -52,15 +62,19 @@ body{
 }
 .sight{
     display: flex;
-    padding: 10px;
+    justify-content: space-between;
+    margin: 20px 20px 0 0;
 }
-.sight__title{
-    font-size: 20px;
-    text-align: center;
+.sight.reverse{
+    flex-direction: row-reverse;
+}
+.sight__img{
+    width: 30%;
+    box-shadow: 5px 5px 5px rgb(69, 69, 69);
+}
+.sight__text{
+    width: 65%;
 }
 .sight__description{
-    width: 70%;
-}
-.sight img{
-    width: 30%;
+    width: 100%;
 }

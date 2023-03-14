@@ -1,0 +1,13 @@
+{%for sight in city.sights%}
+    {%if sight.reversed%}
+        <div class = "sight reverse">
+    {%else%}
+        <div class = "sight">
+    {%endif%}
+        <img class = "sight__img" src = {{sight.image}} alt = "">
+        <div class = "sight__text">
+            <p class = "sight__title">{{sight.title}}</p>
+            <p class = "sight__description">{{sight.description}}</p>
+        </div>
+    </div>
+{%endfor%}
