@@ -1,5 +1,5 @@
 body{
-    background-color: rgb(195, 237, 206);
+    background-color: rgb(255, 253, 223);
     overflow: hidden;
 }
 a{
@@ -31,12 +31,12 @@ img{
     width: 100%;
     margin: 5px 0;
     padding: 0 5px;
-    background-color: rgb(195, 237, 206);
     border-radius: 5px;
+    transition: background-color .3s;
 }
 
 .card:hover{
-    background-color: rgb(171, 209, 181);
+    background-color: rgb(232, 229, 201);
 }
 
 .card__description{
